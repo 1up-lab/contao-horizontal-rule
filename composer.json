@@ -1,0 +1,56 @@
+{
+  "name":"oneup/contao-horizontal-rule",
+  "description":"Horizontal Rules. Thats all.",
+  "keywords":["contao", "horizontal", "rule"],
+  "type":"contao-module",
+  "homepage":"http://1up.io",
+  "license":"MIT",
+  "authors":[
+    {
+      "name":"David Greminger",
+      "email":"dg@1up.io",
+      "homepage":"http://1up.io",
+      "role":"Developer"
+    },
+    {
+      "name":"Jim Schmid",
+      "email":"js@1up.io",
+      "homepage":"http://1up.io",
+      "role":"Developer"
+    }
+  ],
+  "support":{
+    "email":"hello@1up.io",
+    "issues":"https://github.com/1up-lab/contao-horizontal-rule/issues",
+    "irc":"irc://irc.freenode.org/contao.dev",
+    "source":"https://github.com/1up-lab/contao-horizontal-rule"
+  },
+  "require":{
+    "php":">=5.4",
+    "contao/core":">=3.2,<3.5-dev",
+    "contao-community-alliance/composer-plugin": "~2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~3.7"
+  },
+  "conflict": {
+    "contao/core": "3.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Oneup\\HorizontalRule\\": "src"
+    }
+  },
+  "extra": {
+    "contao": {
+      "sources": {
+        "contao": "system/modules/horizontal-rule"
+      }
+    },
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
